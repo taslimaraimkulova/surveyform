@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> task 3</title>
+	<style type="text/css">
+		*(
+			margin: 0;
+			padding: 0;
+			)
+	#name{
+		width: 100%;
+		height: 100px;
+	}
+	.firstname{
+		position: relative;
+		left: 150px;
+		top: -35px;
+		line-height: 15px;
+		font-size: 15px; 
+	}
+	.lastname{
+		position: relative;
+		left: 285px;
+		top: -58px;
+		line-height: 15px;
+		font-size: 15px; 
+	}
+
+	.firstlabel{
+		position: relative;
+		text-transform: capitalize;
+		font-size: 14px;
+		left: 150px;
+		top: -37px;
+	}
+
+	.lastlabel{
+		position: relative;
+		text-transform: capitalize;
+		font-size: 14px;
+		left: 83px;
+		top: -39px;
+	}
+
+	.company{
+		position: relative;
+		left: 150px;
+		top: -37px;
+		line-height: 5px;
+		width: 394px;
+		font-size: 15px; 
+	}
+
+	.address{
+		position: relative;
+		left: 150px;
+		top: -37px;
+		line-height: 5px;
+		width: 394px;
+		font-size: 15px; 
+	}
+	.firstaddresslabel{
+		position: relative;
+		text-transform: capitalize;
+		font-size: 14px;
+		left: -255px;
+		top: -20px;
+	}
+	.address_second{
+		position: relative;
+		left: 150px;
+		top: -15px;
+		line-height: 5px;
+		width: 394px;
+		font-size: 15px; 
+	}
+	.secondaddresslabel{
+		position: relative;
+		text-transform: capitalize;
+		font-size: 14px;
+		left: -255px;
+		top: 6px;
+	}
+
+
+button{
+	display: block;
+	margin: 20px 0px 0px 20px;
+	text-align: left;
+	border: 2px;
+	padding: 14px 110px;
+	outline: none;
+	color: black;
+	cursor: pointer;
+	transition: 0.25px;
+}
+
+
+
+	</style>
+</head>
+
+<body>
+	<div id="survey-form"><h1>Computer Repair Leagua</h1></div><hr>
+
+	<div class="mane">
+		<form>
+			<hr><h2> Work order Request</h2><hr>
+			<div id="name">
+				<h3 class="name">Full Name</h3>
+				<input class="firstname" type="text" name="first_name"><br>
+				<label class="firstlabel">First Name</label>
+				<input class="lastname" type="text" name="last_name">
+				<label class="lastlabel">Last Name</label>
+			</div>
+		</form>
+	</div>
+
+	<h3 class="name">Company</h3>
+	<input class="company" type="text" name="company">
+
+	
+
+
+    <h3 class="name">Address</h3>
+	<input class="address" type="text" name="address">
+	<label class="firstaddresslabel">Street Address</label><br>
+	<input class="address_second" type="text" name="address_second">
+	<label class="secondaddresslabel">Street Address Line 2</label>		
+	<input class="city" type="text" name="city">
+	<label class="citylabel">City</label>		
+	<input class="state" type="text" name="state">
+	<label class="statelabel">State/Province</label><br>		
+	<input class="postal_code" type="text" name="postal_code">
+	<label class="postallabel">Postal/Zip Code</label>
+
+    
+    <select class="option" name="country">
+    	<option disabled="disabled" selected="selected">Please select</option>
+    	<option>Afghanistan</option>
+    	<option>Albania</option>
+    	<option>Australia</option>
+    	<option>Brazil</option>
+    	<option>Benin</option>
+    	<option>Canada</option>
+    	<option>Congo</option>
+    	<option>Georgia</option>
+    	<option>Germany</option>
+    	<option>Iran</option>
+    	<option>Italy</option>
+    	<option>Japan</option>
+    	<option>Kazakhstan</option>
+    	<option>Kyrgyzstan</option>
+    	<option>Mexico</option>
+    	<option>New Zealand</option>
+    	<option>Russia</option>
+    	<option>United States of America</option>
+    </select>
+
+
+<h3 class="name"> Phone</h3>
+    <input class="area_code" type="text" name="area_code">
+    <label class="area-code">Area Code</label>
+    <input class="phone" type="text" name="phone">
+    <label class="phone-number">Phone Number</label>
+
+
+	<h3 class="name">Email</h3>
+	<input class="email" type="text" name="email">
+
+
+
+    <h3 id="problem"> Problem Category:</h3>
+    <input type="checkbox" id="problem" name="problem" value="Computer">
+    <label for="problem"> Computer</label><br>
+     <input type="checkbox" id="problem" name="problem" value="network">
+    <label for="problem"> Network</label><br>
+     <input type="checkbox" id="problem" name="problem" value="other">
+    <label for="problem"> Other</label>
+    <h3> Problem</h3>
+
+    <textarea rows="5" cols="40" name="text"></textarea></p>
+
+    <h3> Comment and Questions:</h3>
+
+    <textarea rows="10" cols="50" name="text"></textarea></p>
+
+ <input type="button" value="Submit">
+
+
+
+
+
+
+</body>
+</html>
